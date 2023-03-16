@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Being a newbie in the data space and hearing some amazing people talk about how data cleaning takes a lot of time to clean on and how challenging it could be.
+Being a newbie in the data space and hearing some amazing people talk about how data cleaning takes a lot of time to clean and how challenging it could be.
 The #datacleaningchallenge which was organized recently on the twitter space was about the messy and dirty FiFa 2021 csv data. This challenge was to encourage and gave everyone the opportunity to work on a data cleaning project with any prefered tools of their choice and also learn new skills and different ways while on the job.
 
 ## Problems and things to look out for
@@ -55,7 +55,7 @@ Contract before          |  Contract After
 
 ## The OVA, POT and the BOV Columns
 
-A % column of each column was calculated by dividing by 100 to get the percentage of each column.The data type was changed and column renamed to Overall rating, Potential rating and Best overall ration. This was carried out as instructed in our data dictionary, 
+A % column of each column was calculated by dividing by 100 to get the percentage of each column.The data type was changed and column renamed to Overall rating, Potential rating and Best overall ration. This was carried out as instructed in our data dictionary.
 
 Overall Ratings Before   |  Overall Ratings After
 :-----------------------:|:-------------------------:
@@ -63,20 +63,44 @@ Overall Ratings Before   |  Overall Ratings After
 
 ## WF, SM and IR Columns
 
-Replaced value was done in this column to remove the special character star and the data type was changed in these columns
+Replaced value was done in this column to remove the special character star and the data type was changed in these columns.
 
 Before Removing       |   After Removing
 :--------------------:|:-------------------:
 ![](WFSMbefore.png)   | ![](WFSMafter.png)
 
-## Height and Weight
-
-The height column values was changed from foot'inche to cm and the weight from kg to lbs. A conditional column was created, the standard calculation was used to for the conversion of each column and made to stand alone to allow for easy calculation.
-
-
 ## Value, Wages and Release Clause Column
 
-First a conditional column was created 
+First a conditional column was created which if column name end with M and K then output is 1,000,000 and 1000 respectively. The characters where replaced with spece and the data type was changed. This are all done to enable easy calculations.
+
+Before Conversion                      | After Conversion
+:-------------------------------------:|:------------------:
+![](Valuewagesreleaseclausebefore.png) | ![](Valuewagesreleaseclauseafter.png)
+
+## Hits Column
+
+The hit columns has the numbers of time a player profile was view and going by the data dictionary, the values that have K should be multiple by 1000. The data type was changed and the K value was replaced.
+ 
+Before Conversion         |   After Conversion
+:------------------------:|:-------------------:
+![](HitsBefore.png)       | ![](Hitsafter.png)
+
+## Height and Weight
+
+The height column values was changed from foot'inche to cm and the weight from kg to lbs. A conditional column was created, the standard calculation was used for the conversion of each column and made to stand alone to allow for easy calculation.
+
+Height After         |   Weight After
+:-------------------:|:---------------------:
+![](HeightAfter.png) | ![](WeightAfter.png)
+
+## Conclusion
+
+Joining this challenge is a big one for me as it has helped me alot and i have also learn new skills during the challenge and how to document my projects the right way going forway. Thanks to the organisers for this great opportunity.
+
+Thank You 
+I'm open to suggestions and improvement.
+
+
 
 
 
